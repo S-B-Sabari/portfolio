@@ -9,7 +9,7 @@ export default function About() {
   const stats = [
     { 
       label: "Years Experience", 
-      value: "3 Months", 
+      value: "9+ months", 
       detail: "Junior UI Developer",
       icon: <Award className="w-5 h-5 text-blue-400" /> 
     },

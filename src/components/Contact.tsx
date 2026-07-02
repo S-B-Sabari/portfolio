@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Mail, Phone, MapPin, Check, Copy } from "lucide-react";
+import { Mail, Phone, Check, Copy } from "lucide-react";
 import { resumeData } from "@/data/resumeData";
 
 export default function Contact() {
@@ -33,7 +33,7 @@ export default function Contact() {
         </div>
 
         {/* Centered Cards Container */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto w-full items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto w-full items-stretch">
           
           {/* Email Widget */}
           <div className="glass-panel p-6 rounded-2xl border border-white/10 flex items-center justify-between group hover:border-purple-500/30 transition-all duration-300">
@@ -66,19 +66,6 @@ export default function Contact() {
               <a href={`tel:${resumeData.profile.phone.replace(/\s+/g, "")}`} className="text-sm font-semibold text-white hover:text-purple-400 transition-colors">
                 {resumeData.profile.phone}
               </a>
-            </div>
-          </div>
-
-          {/* Location Widget */}
-          <div className="glass-panel p-6 rounded-2xl border border-white/10 flex items-center gap-4 group hover:border-purple-500/30 transition-all duration-300">
-            <div className="p-3.5 rounded-xl bg-slate-900 border border-white/10 text-emerald-400 group-hover:scale-105 transition-transform">
-              <MapPin className="w-5 h-5" />
-            </div>
-            <div className="text-left">
-              <span className="text-[10px] font-bold text-slate-500 uppercase block tracking-wider">Current Location</span>
-              <span className="text-sm font-semibold text-white">
-                {resumeData.profile.location}
-              </span>
             </div>
           </div>
 

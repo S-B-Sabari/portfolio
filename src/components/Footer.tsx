@@ -36,7 +36,7 @@ export default function Footer() {
 
         {/* Heart Credit */}
         <div className="flex items-center gap-1.5 text-xs text-slate-400">
-          <span>Crafted in Madurai, Tamil Nadu</span>
+          <span>Crafted by Sabari</span>
           <Heart className="w-3.5 h-3.5 text-rose-500 fill-current animate-pulse" />
         </div>
 
